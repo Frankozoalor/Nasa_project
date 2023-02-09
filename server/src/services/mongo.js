@@ -18,6 +18,11 @@ function mongoConnect() {
   mongoose.connect(MONGO_URL);
 }
 
+function mongoDisconnect() {
+  mongoose.disconnect(MONGO_URL);
+}
+
 module.exports = {
   mongoConnect,
+  mongoDisconnect,
 };
