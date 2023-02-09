@@ -11,7 +11,7 @@ steps:
   - uses: actions/checkout@v2
   - name: Use Node.js version 18
     uses: actions/setup-node@v2
-  with:
+with:
     node-version: "18"
   - run: npm install
   - run: npm run build --prefix client
